@@ -1,7 +1,7 @@
 import webvtt
 import os
 
-webvtt = webvtt.from_srt(os.path.join(os.getcwd(), r'MoviePicker\init.srt'))
+webvtt = webvtt.from_srt(os.path.join(os.getcwd(), os.path.join('MoviePicker', 'init.srt')))
 
 def convert(filename):
     if 'vtt' in filename: # if the selected file is already a vtt, return the file

@@ -1,7 +1,6 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
 from tkinter import Tk, filedialog
-import pyperclip
 import os
 import subtitle
 import atexit
@@ -24,7 +23,6 @@ def get_movie():
     root.withdraw()
     filename = filedialog.askopenfilename(parent=root, title='Select a movie file', filetypes=[("Movie files", ".mp4 .mkv")])
     rel_path = os.path.relpath(filename, ANCHOR)
-    pyperclip.copy(rel_path)
 
     return jsonify(rel_path)
 

@@ -1,3 +1,3 @@
 @echo off
-python "E:\Nobar\nobar.py" %*
+python "%cd%\nobar.py" %*
 pause

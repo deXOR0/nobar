@@ -1,6 +1,14 @@
 document.getElementById("submitButton").onclick = function () {
   const movie = document.getElementById("movie").value;
-  const title = movie.substring(movie.lastIndexOf("\\") + 1);
+  var index = movie.lastIndexOf("\\");
+  if (index > 0) {
+  	index++;
+  }
+  else {
+  	index = movie.lastIndexOf("/") + 1;
+  }
+  console.log("index = " + index);
+  const title = movie.substring(index);
   const subtitle = document.getElementById("subtitle").value;
   console.log(title);
   console.log(movie);

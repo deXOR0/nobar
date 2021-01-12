@@ -33,6 +33,10 @@ I initially want to keep this simple and just built a static webpage without any
     ```
     start chrome nobar.html --allow-file-access-from-files
     ```
+    If you're on linux or mac os, use this command
+    ```
+    google-chrome nobar.html --allow-file-access-from-files
+    ```
     If you are run it with step 1 or 2, this is already done automatically, you can also skip this step if you don't want to use external subtitle file (srt or vtt will work, srt will automatically be converted to vtt by the flask service)
 
 ## Restrictions

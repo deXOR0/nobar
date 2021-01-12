@@ -1,3 +1,3 @@
 @echo off
-python "F:\Film & TV Show\Nobar\nobar.py" %*
+python "E:\Nobar\nobar.py" %*
 pause

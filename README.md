@@ -40,7 +40,7 @@ I initially want to keep this simple and just built a static webpage without any
     If you are run it with step 1 or 2, this is already done automatically, you can also skip this step if you don't want to use external subtitle file (srt or vtt will work, srt will automatically be converted to vtt by the flask service)
 
 ## Restrictions
-Windows does not use relative path between drives, as it is not mounted on a single root directory, unlike literally everything else is the market, so the only downside is that you have to have a separete instance of this app on each of your drive if you have multiple drives. This problem only occurs in windows. If you know a workaround please do let me know as it is very annoying.
+Windows does not use relative path between drives, as it is not mounted on a single root directory, unlike literally everything else is the market, so the only downside is that you have to have a separete instance of this app on each of your drive if you have multiple drives. This problem only occurs in windows. I solved this problem by creating a 'files' directory and copy the file from other drives into it. This solves the problem but it is very impracticle and takes a lot of time. I implemented some functions to automatically clean the directory in an effort to make it less demanding on storage space. 
 
 ## Prerequisites
 - Python 3.x

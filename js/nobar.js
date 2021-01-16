@@ -2,10 +2,9 @@ document.getElementById("submitButton").onclick = function () {
   const movie = document.getElementById("movie").value;
   var index = movie.lastIndexOf("\\");
   if (index > 0) {
-  	index++;
-  }
-  else {
-  	index = movie.lastIndexOf("/") + 1;
+    index++;
+  } else {
+    index = movie.lastIndexOf("/") + 1;
   }
   console.log("index = " + index);
   const title = movie.substring(index);
